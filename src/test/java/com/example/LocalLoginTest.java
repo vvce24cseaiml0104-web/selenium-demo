@@ -24,8 +24,8 @@ public class LocalLoginTest {
     	options.addArguments("--disable-dev-shm-usage");
     	options.addArguments("--window-size=1920,1080");
 
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver = new ChromeDriver(options);
+        
 
         String page = new File("webpage/login.html")
                 .getAbsoluteFile()
